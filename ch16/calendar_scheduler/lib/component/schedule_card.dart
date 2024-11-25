@@ -33,11 +33,11 @@ class ScheduleCard extends StatelessWidget {
                 startTime: startTime,
                 endTime: endTime,
               ),
-              SizedBox(width: 16.0),
+              const SizedBox(width: 16.0),
               _Content(   // ➌ 일정 내용을 보여줄 위젯
                 content: content,
               ),
-              SizedBox(width: 16.0),
+              const SizedBox(width: 16.0),
             ],
           ),
         ),
@@ -59,7 +59,7 @@ class _Time extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final textStyle = TextStyle(
+    final textStyle = const TextStyle(
       fontWeight: FontWeight.w600,
       color: PRIMARY_COLOR,
       fontSize: 16.0,

@@ -13,7 +13,7 @@ class TodayBanner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final textStyle = TextStyle(  // 기본으로 사용할 글꼴
+    final textStyle = const TextStyle(  // 기본으로 사용할 글꼴
       fontWeight: FontWeight.w600,
       color: Colors.white,
     );
@@ -21,7 +21,7 @@ class TodayBanner extends StatelessWidget {
     return Container(
       color: PRIMARY_COLOR,
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+        padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [

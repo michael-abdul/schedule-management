@@ -25,7 +25,7 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet> {
           child: Column(
             // ➋ 시간 관련 텍스트 필드와 내용관련 텍스트 필드 세로로 배치
             children: [
-              Row(
+              const Row(
                 // ➊ 시작 시간 종료 시간 가로로 배치
                 children: [
                   Expanded(
@@ -35,7 +35,7 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet> {
                       isTime: true,
                     ),
                   ),
-                  const SizedBox(width: 16.0),
+                  SizedBox(width: 16.0),
                   Expanded(
                     child: CustomTextField(
                       // 종료시간 입력 필드
@@ -45,8 +45,8 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet> {
                   ),
                 ],
               ),
-              SizedBox(height: 8.0),
-              Expanded(
+              const SizedBox(height: 8.0),
+              const Expanded(
                 child: CustomTextField(
                   // 내용 입력 필드
                   label: '내용',
@@ -60,9 +60,9 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet> {
                   // ➌ [저장] 버튼
                   onPressed: onSavePressed,
                   style: ElevatedButton.styleFrom(
-                    primary: PRIMARY_COLOR,
+                    backgroundColor: PRIMARY_COLOR,
                   ),
-                  child: Text('저장'),
+                  child: const Text('저장'),
                 ),
               ),
             ],
